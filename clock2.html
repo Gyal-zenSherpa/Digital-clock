@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Futuristic Digital Clock</title>
+    <link rel="stylesheet" href="clock2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio
+      id="alarmSound"
+      src="https://www.soundjay.com/button/beep-07.wav"
+      preload="auto"
+    ></audio>
+    <div class="clock-container">
+      <div class="clock">
+        <div class="time" id="time"></div>
+        <div class="date" id="date"></div>
+        <div class="day" id="day"></div>
+        <div class="temperature" id="temperature">Temperature: 25°C</div>
+        <div class="alarm" id="alarm"></div>
+        <div class="set-alarm">
+          <input type="time" id="alarmTime" />
+          <button id="setAlarm">Set Alarm</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="clock2.js"></script>
+  </body>
+</html>
